@@ -3,73 +3,106 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Systemslab101</title>
+  <title>Systems Lab 101</title>
+  <meta name="description" content="Documenting how I work smarter with AI, workflows, and automation as a solo creator." />
   <style>
+    :root {
+      --bg: #ffffff;
+      --text: #202020;
+      --muted: #666666;
+      --accent: #f36b7f;
+      --accent-hover: #ea5c72;
+    }
+
+    * { box-sizing: border-box; }
+
     body {
       margin: 0;
-      background: #ffffff;
-      color: #000000;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-    }
-
-    .container {
-      max-width: 720px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       padding: 2rem;
     }
 
+    .wrap {
+      width: 100%;
+      max-width: 640px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 110px;
+      height: 110px;
+      margin: 0 auto 2rem;
+    }
+
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 50%;
+    }
+
     h1 {
-      font-size: 2.5rem;
-      line-height: 1.2;
-      margin-bottom: 1.5rem;
+      margin: 0 0 1rem;
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.1;
       font-weight: 700;
+      letter-spacing: -0.03em;
     }
 
-    p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      margin-bottom: 1.5rem;
+    .subtext {
+      margin: 0 auto 2.5rem;
+      max-width: 560px;
+      font-size: 1.3rem;
+      line-height: 1.5;
+      color: var(--muted);
     }
 
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 1.5rem 0;
-    }
-
-    li {
-      margin: 0.5rem 0;
-      font-size: 1.05rem;
-    }
-
-    .accent {
-      color: #e11d48;
-      font-weight: 600;
-      margin-top: 2rem;
+    .cta-button {
       display: inline-block;
+      padding: 1rem 2rem;
+      background: var(--accent);
+      color: #ffffff;
+      font-size: 1.05rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: background 0.2s ease;
+    }
+
+    .cta-button:hover {
+      background: var(--accent-hover);
+    }
+
+    @media (max-width: 560px) {
+      .subtext { font-size: 1.1rem; }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Systems that help you build, create, and improve faster.</h1>
+  <main class="wrap">
+    <div class="logo">
+      <!-- IMPORTANT: upload your logo file to GitHub and name it logo.png -->
+      <img src="logo.png" alt="Systems Lab logo">
+    </div>
 
-    <p>
-      Documenting how I work smarter with AI, workflows, and automation as a creator.
+    <h1>Systems Lab 101</h1>
+
+    <p class="subtext">
+      Documenting how I work smarter with AI, workflows, and automation as a solo creator.
     </p>
 
-    <ul>
-      <li>simple apps</li>
-      <li>landing pages</li>
-      <li>creator workflows</li>
-      <li>AI-assisted systems</li>
-    </ul>
-
-    <p class="accent">Follow along on Substack.</p>
-  </div>
+    <a 
+      href="https://systemslab101.substack.com/?utm_campaign=profile_chips"
+      class="cta-button"
+    >
+      Follow along on Substack →
+    </a>
+  </main>
 </body>
 </html>
