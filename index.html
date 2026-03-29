@@ -1,108 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Systems Lab 101</title>
-  <meta name="description" content="I test simple ways to work smarter using AI, Canva, and everyday workflows, and share what works." />
-  <style>
-    :root {
-      --bg: #ffffff;
-      --text: #202020;
-      --muted: #666666;
-      --accent: #f36b7f;
-      --accent-hover: #ea5c72;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Systems Lab 101</title>
 
-    * { box-sizing: border-box; }
+<style>
+:root{
+--bg:#ffffff;
+--text:#111;
+--muted:#555;
+--accent:#f36b7f;
+--accent-hover:#e45f73;
+--max:760px;
+}
 
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      padding: 2rem;
-    }
+*{box-sizing:border-box}
 
-    .wrap {
-      width: 100%;
-      max-width: 640px;
-      text-align: center;
-    }
+body{
+margin:0;
+padding:40px 20px;
+background:var(--bg);
+color:var(--text);
+font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+display:flex;
+justify-content:center;
+}
 
-    .logo {
-      width: 110px;
-      height: 110px;
-      margin: 0 auto 2rem;
-    }
+.wrap{
+max-width:var(--max);
+width:100%;
+text-align:center;
+}
 
-    .logo img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      border-radius: 50%;
-    }
+.banner{
+max-width:680px;
+width:100%;
+border-radius:16px;
+margin:0 auto 32px;
+}
 
-    h1 {
-      margin: 0 0 1rem;
-      font-size: clamp(2rem, 5vw, 3rem);
-      line-height: 1.1;
-      font-weight: 700;
-      letter-spacing: -0.03em;
-    }
+h1{
+font-size:clamp(2.4rem,6vw,4rem);
+margin:0 0 18px;
+font-weight:800;
+}
 
-    .subtext {
-      margin: 0 auto 2.5rem;
-      max-width: 560px;
-      font-size: 1.3rem;
-      line-height: 1.5;
-      color: var(--muted);
-    }
+.sub{
+color:var(--muted);
+margin-bottom:20px;
+font-size:1.2rem;
+line-height:1.6;
+}
 
-    .cta-button {
-      display: inline-block;
-      padding: 1rem 2rem;
-      background: var(--accent);
-      color: #ffffff;
-      font-size: 1.05rem;
-      font-weight: 600;
-      text-decoration: none;
-      border-radius: 10px;
-      transition: background 0.2s ease;
-    }
+.proof{
+margin-bottom:32px;
+font-weight:600;
+}
 
-    .cta-button:hover {
-      background: var(--accent-hover);
-    }
+.form-shell{
+max-width:520px;
+margin:0 auto 12px;
+}
 
-    @media (max-width: 560px) {
-      .subtext { font-size: 1.1rem; }
-    }
-  </style>
+.micro{
+color:var(--muted);
+margin-top:12px;
+}
+
+.blog-link{
+display:inline-block;
+margin-top:14px;
+color:var(--accent);
+font-weight:600;
+text-decoration:none;
+}
+
+.blog-link:hover{
+color:var(--accent-hover);
+}
+
+.form-shell button,
+.form-shell input[type="submit"]{
+background:var(--accent)!important;
+color:#fff!important;
+border:none!important;
+border-radius:12px!important;
+font-weight:700!important;
+cursor:pointer;
+}
+</style>
 </head>
+
 <body>
-  <main class="wrap">
-    <div class="logo">
-      <!-- IMPORTANT: upload your logo file to GitHub and name it logo.png -->
-      <img src="logo.png" alt="Systems Lab logo">
-    </div>
+<main class="wrap">
 
-    <h1>Systems Lab 101</h1>
+<img src="banner.png" class="banner" alt="Systems Lab 101"/>
 
-    <p class="subtext">
-      I test simple ways to work smarter using AI, Canva, and everyday workflows, and share what works.
-    </p>
+<h1>Build simple systems with AI and Canva in minutes</h1>
 
-    <a 
-      href="https://systemslab101.substack.com"
-      class="cta-button"
-    >
-      See what I’m testing →
-    </a>
-  </main>
+<p class="sub">
+Systems Lab 101 is a live lab where I test workflows for AI, Canva, and everyday tasks, and share what actually works.
+</p>
+
+<p class="proof">
+Landing page in 5 min · App deployed in 30 min · Repeatable Canva workflows
+</p>
+
+<div class="form-shell">
+<script async data-uid="020665a087" src="https://systems-lab-101.kit.com/020665a087/index.js"></script>
+</div>
+
+<p class="micro">
+Follow along, test it yourself, and use what works.
+</p>
+
+<a class="blog-link" href="https://systemslab101.substack.com/" target="_blank">
+Read past experiments →
+</a>
+
+</main>
 </body>
 </html>
